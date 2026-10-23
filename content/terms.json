@@ -1,7 +1,7 @@
 {
   "kind": "terms",
   "title": "Terms of Use",
-  "version": "2026-10-23.2",
+  "version": "2026-10-23.4",
   "effectiveDate": "23 October 2026",
   "operator": "Huiru Gao",
   "contactEmail": "erchen735@gmail.com",
@@ -45,8 +45,8 @@
     {
       "heading": "6. Free use, Pro and previews",
       "paragraphs": [
-        "The current free app allows recording and editing today and yesterday and viewing the calendar and core totals. Pro includes older-day editing, notes, insights and CSV/PDF exports, with additional features described on the purchase screen. The features and conditions shown before a purchase govern the offer you accept.",
-        "The app may provide a limited in-app preview measured by active use. An in-app preview does not itself buy a subscription, charge your Apple Account or create automatic renewal. Do not confuse it with an App Store introductory offer. If Apple offers a billed trial or promotional subscription, its duration, price after the offer and cancellation conditions must be shown before you confirm."
+        "New users receive a 24-hour app preview starting with first acceptance of the terms. This is continuous elapsed time, including time outside the app, and is not an Apple subscription introductory offer. No purchase or automatic charge occurs when it ends. After expiry, only today’s existing diary content remains viewable; recording, editing, history, statistics, sharing, exports, widgets and sync require valid access. Purchase restoration, legal documents and support remain accessible. Existing diary data is kept.",
+        "The app preview does not buy a subscription or create automatic renewal. If Apple separately offers a billed trial or promotional subscription, its duration, price after the offer and cancellation conditions must be shown before you confirm."
       ]
     },
     {
@@ -73,7 +73,7 @@
     {
       "heading": "10. Your records, device storage and exports",
       "paragraphs": [
-        "Your diary, notes, selected diary photos, profile and onboarding answers are stored on your device. A widget uses a shared container on the same device. The current app does not provide cross-device diary sync or our own cloud diary backup. We cannot recover a diary we do not hold.",
+        "Your diary, notes, selected diary photos, profile and onboarding answers are stored on your device. A widget uses a shared container on the same device. If you explicitly enable optional history sync, supported diary fields and app settings are mirrored through Apple’s private CloudKit database; photo files remain on the device. Sync is off by default, requires valid access and the appropriate Apple account and configured build, and changes take effect after restarting the app. The operator-hosted purchase service does not hold your diary and cannot recover local records or photo files.",
         "Protect your device and consider available export and Apple device-backup options. Uninstalling the app or resetting its data may remove local records. An export sent to Files, email or another app is controlled by you and the receiving service. Apple Health copies and separately saved exports may remain after the app is deleted and must be managed in those destinations."
       ]
     },
@@ -81,7 +81,7 @@
       "heading": "11. Permissions and third-party services",
       "paragraphs": [
         "Health access, photo selection and notifications are optional and governed by your system choices. You can change permissions in iOS settings. Some integrations may stop working if permissions are refused or revoked; essential local diary use does not require all optional permissions.",
-        "Apple provides the App Store, purchase processing and optional system services. RevenueCat supports purchase validation, and our Cloudflare-hosted purchase service checks signed purchase proofs and receives authenticated purchase events, as explained in the Privacy Policy. Cloudflare also hosts this website. These services do not provide cloud diary sync. Third-party outages or restrictions may affect those services; we do not control their independent policies or platform decisions."
+        "Apple provides the App Store, purchase processing and optional system services. RevenueCat supports purchase validation, and our Cloudflare-hosted purchase service checks signed purchase proofs and receives authenticated purchase events, as explained in the Privacy Policy. Cloudflare also hosts this website. The operator-hosted services do not provide diary sync. Optional history sync uses Apple CloudKit and requires an Apple account and supported configuration; photos are not synced. Third-party outages or restrictions may affect those services; we do not control their independent policies or platform decisions."
       ]
     },
     {
@@ -117,6 +117,12 @@
       "paragraphs": [
         "These Terms are between you and Huiru Gao, not Apple. Apple is not responsible for maintaining or supporting Drytally. To the extent required by the App Store terms, Apple and its subsidiaries are third-party beneficiaries of the applicable licence provisions. Apple’s standard Licensed Application End User License Agreement also applies where supplied with your download; mandatory platform and consumer rules prevail where applicable.",
         "For support, purchase-access questions, legal enquiries or a copy of these Terms, email erchen735@gmail.com. Include the app version and a description of the issue, but do not send your Apple Account password, payment-card details, verification codes or unnecessary diary information."
+      ]
+    },
+    {
+      "heading": "24-hour preview and access",
+      "paragraphs": [
+        "The app preview lasts 24 continuous hours from first agreement acceptance, including time outside the app. It does not automatically enrol you in a subscription or charge you. When access expires, today’s existing content remains read-only; other app features require valid access. Existing diary data is retained. Purchase, restoration, legal information and support stay accessible. This app preview is separate from any Apple subscription offer."
       ]
     }
   ]

@@ -1,11 +1,11 @@
 {
   "kind": "privacy",
   "title": "Privacy Policy",
-  "version": "2026-10-23.2",
+  "version": "2026-10-23.4",
   "effectiveDate": "23 October 2026",
   "operator": "Huiru Gao",
   "contactEmail": "erchen735@gmail.com",
-  "summary": "Your diary stays on your device. Purchase verification, website visits and support have separate data flows.",
+  "summary": "Your diary stays local unless you enable optional Apple history sync. Photos stay on your device. Purchases, website visits and support have separate data flows.",
   "sections": [
     {
       "heading": "1. Who is responsible and what this notice covers",
@@ -18,7 +18,7 @@
       "heading": "2. Diary and settings kept on your device",
       "paragraphs": [
         "The app stores dates, drink counts and types, notes, selected diary photos, price/currency settings and calculated summaries in its local storage. It also stores profile name, signature and selected avatar, optional onboarding answers, appearance preferences, reminder settings, purchase-access cache and the version/date of legal acceptance.",
-        "Local database and preference storage are used to show your diary and preserve choices between launches. A shared App Group container lets the widget read a local snapshot. We do not receive this diary or profile in an operator-hosted database, and the current build has no diary-upload endpoint or cross-device sync service."
+        "Local storage preserves your diary between launches. If you explicitly enable iCloud history sync while access is available, supported diary fields and app settings are mirrored through Apple’s private CloudKit database. Photo files stay on the device; filenames in diary records are not an image backup. Sync is off by default, requires the appropriate Apple account and configured build, and changes take effect after restarting the app. The operator-hosted purchase backend does not receive your diary."
       ]
     },
     {
@@ -68,8 +68,8 @@
     {
       "heading": "9. Sensitive information and what we do not do",
       "paragraphs": [
-        "A drinking diary, notes or selected images may reveal health or other sensitive information. They remain local in the current product unless you deliberately share or export them, use Apple Health or include them in a support message. We do not operate an advertising profile, sell diary data, use it to decide insurance or employment eligibility, or use it to train an AI model.",
-        "The current app has no social account, friend directory, AI analysis service, remote diary backup or operator-run cloud sync. An existing service for a different product is not part of Drytally merely because it belongs to the same operator. A material future service would require its own disclosure and any required choices before use."
+        "A drinking diary, notes or selected images may reveal health or other sensitive information. They remain on your device unless you enable optional Apple CloudKit history sync or you deliberately share or export them, use Apple Health or include them in a support message. We do not operate an advertising profile, sell diary data, use it to decide insurance or employment eligibility, or use it to train an AI model.",
+        "The app has no social account, friend directory, AI analysis service or operator-hosted diary database. Optional history sync is handled by Apple CloudKit, separately from RevenueCat and the operator-hosted purchase service. Apple account and platform controls apply to cloud copies; turning sync off does not itself delete data already in iCloud."
       ]
     },
     {
@@ -118,8 +118,14 @@
     {
       "heading": "16. Changes, supplier notices and contact",
       "paragraphs": [
-        "This notice is version 2026-10-23.2, effective 23 October 2026. We will update it when actual data practices change and bring material changes to your attention where required. The app and website use the same document version; optional permissions and any separately required consent remain separate from this notice.",
+        "This notice is version 2026-10-23.4, effective 23 October 2026. We will update it when actual data practices change and bring material changes to your attention where required. The app and website use the same document version; optional permissions and any separately required consent remain separate from this notice.",
         "For questions, a privacy request or a complaint, contact Huiru Gao at erchen735@gmail.com. Relevant supplier information is available at apple.com/legal/privacy, revenuecat.com/privacy and cloudflare.com/privacypolicy. Following an external link takes you to that provider’s own service and policies."
+      ]
+    },
+    {
+      "heading": "Access choices and stored diary data",
+      "paragraphs": [
+        "The app preview lasts 24 continuous hours from first agreement acceptance, including time outside the app. It does not automatically enrol you in a subscription or charge you. When access expires, today’s existing content remains read-only; other app features require valid access. Existing diary data is retained. Purchase, restoration, legal information and support stay accessible. This app preview is separate from any Apple subscription offer."
       ]
     }
   ]
