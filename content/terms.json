@@ -1,8 +1,8 @@
 {
   "kind": "terms",
   "title": "Terms of Use",
-  "version": "2026-10-23.4",
-  "effectiveDate": "23 October 2026",
+  "version": "2026-10-24.6",
+  "effectiveDate": "24 October 2026",
   "operator": "Huiru Gao",
   "contactEmail": "erchen735@gmail.com",
   "summary": "A clear agreement for your own drinking diary.",
@@ -45,7 +45,7 @@
     {
       "heading": "6. Free use, Pro and previews",
       "paragraphs": [
-        "New users receive a 24-hour app preview starting with first acceptance of the terms. This is continuous elapsed time, including time outside the app, and is not an Apple subscription introductory offer. No purchase or automatic charge occurs when it ends. After expiry, only today’s existing diary content remains viewable; recording, editing, history, statistics, sharing, exports, widgets and sync require valid access. Purchase restoration, legal documents and support remain accessible. Existing diary data is kept.",
+        "The app preview lasts up to 24 continuous hours from first agreement acceptance, including time outside the app. Every cold launch of the app requires an internet connection to verify the preview with our service. After successful verification, the same running app process can count down offline using a continuous clock that includes device sleep. Relaunching requires online verification again. This does not change the separate rules for paid access. The preview does not automatically enrol you in a subscription or charge you. When preview access expires or cannot be verified, the app is read-only; it shows today’s existing content only if today’s date can be verified. Otherwise the date and record are withheld until verification succeeds. Other app features require valid access, existing diary data is retained, and purchase, restoration, legal information and support stay accessible. This app preview is separate from any Apple subscription offer.",
         "The app preview does not buy a subscription or create automatic renewal. If Apple separately offers a billed trial or promotional subscription, its duration, price after the offer and cancellation conditions must be shown before you confirm."
       ]
     },
@@ -122,7 +122,7 @@
     {
       "heading": "24-hour preview and access",
       "paragraphs": [
-        "The app preview lasts 24 continuous hours from first agreement acceptance, including time outside the app. It does not automatically enrol you in a subscription or charge you. When access expires, today’s existing content remains read-only; other app features require valid access. Existing diary data is retained. Purchase, restoration, legal information and support stay accessible. This app preview is separate from any Apple subscription offer."
+        "The app preview lasts up to 24 continuous hours from first agreement acceptance, including time outside the app. Every cold launch of the app requires an internet connection to verify the preview with our service. After successful verification, the same running app process can count down offline using a continuous clock that includes device sleep. Relaunching requires online verification again. This does not change the separate rules for paid access. The preview does not automatically enrol you in a subscription or charge you. When preview access expires or cannot be verified, the app is read-only; it shows today’s existing content only if today’s date can be verified. Otherwise the date and record are withheld until verification succeeds. Other app features require valid access, existing diary data is retained, and purchase, restoration, legal information and support stay accessible. This app preview is separate from any Apple subscription offer."
       ]
     }
   ]

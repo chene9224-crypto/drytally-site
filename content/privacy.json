@@ -1,8 +1,8 @@
 {
   "kind": "privacy",
   "title": "Privacy Policy",
-  "version": "2026-10-23.4",
-  "effectiveDate": "23 October 2026",
+  "version": "2026-10-24.6",
+  "effectiveDate": "24 October 2026",
   "operator": "Huiru Gao",
   "contactEmail": "erchen735@gmail.com",
   "summary": "Your diary stays local unless you enable optional Apple history sync. Photos stay on your device. Purchases, website visits and support have separate data flows.",
@@ -39,7 +39,7 @@
       "heading": "5. Reminders and widgets",
       "paragraphs": [
         "Reminders are scheduled as local iOS notifications using the days and times you choose. They are not a marketing-email subscription or a remote push-messaging account. You can turn them off in the app or iOS settings.",
-        "Widgets use a snapshot in the app’s shared on-device container. A home or lock screen may be visible to other people with access to your phone. Choose widgets and notification display settings appropriate for the privacy you want."
+        "Widgets use a snapshot in the app’s shared on-device container. For free preview access, each widget timeline or snapshot generation sends the shared random installation identifier and a request nonce over HTTPS to our preview-verification service. It does not send diary entries, notes, photos or Health data. Verification failure locks the generated widget; a verified remaining deadline is used to schedule a locked state. iOS controls refresh and may continue showing an already rendered widget cache, so expiry cannot guarantee immediate removal of every cached display. A home or lock screen may be visible to other people with access to your phone. Choose widgets and notification display settings appropriate for the privacy you want."
       ]
     },
     {
@@ -118,14 +118,23 @@
     {
       "heading": "16. Changes, supplier notices and contact",
       "paragraphs": [
-        "This notice is version 2026-10-23.4, effective 23 October 2026. We will update it when actual data practices change and bring material changes to your attention where required. The app and website use the same document version; optional permissions and any separately required consent remain separate from this notice.",
+        "This notice is version 2026-10-23.5, effective 23 October 2026. We will update it when actual data practices change and bring material changes to your attention where required. The app and website use the same document version; optional permissions and any separately required consent remain separate from this notice.",
         "For questions, a privacy request or a complaint, contact Huiru Gao at erchen735@gmail.com. Relevant supplier information is available at apple.com/legal/privacy, revenuecat.com/privacy and cloudflare.com/privacypolicy. Following an external link takes you to that provider’s own service and policies."
       ]
     },
     {
       "heading": "Access choices and stored diary data",
       "paragraphs": [
-        "The app preview lasts 24 continuous hours from first agreement acceptance, including time outside the app. It does not automatically enrol you in a subscription or charge you. When access expires, today’s existing content remains read-only; other app features require valid access. Existing diary data is retained. Purchase, restoration, legal information and support stay accessible. This app preview is separate from any Apple subscription offer."
+        "The app preview lasts up to 24 continuous hours from first agreement acceptance, including time outside the app. Every cold launch of the app requires an internet connection to verify the preview with our service. After successful verification, the same running app process can count down offline using a continuous clock that includes device sleep. Relaunching requires online verification again. This does not change the separate rules for paid access. The preview does not automatically enrol you in a subscription or charge you. When preview access expires or cannot be verified, the app is read-only; it shows today’s existing content only if today’s date can be verified. Otherwise the date and record are withheld until verification succeeds. Other app features require valid access, existing diary data is retained, and purchase, restoration, legal information and support stay accessible. This app preview is separate from any Apple subscription offer."
+      ]
+    },
+    {
+      "heading": "Preview verification and secure device storage",
+      "paragraphs": [
+        "To limit repeated previews, the app creates a random installation identifier and keeps it with the issued deadline in this device’s Keychain. It is not an advertising identifier or access secret and is not used for cross-app tracking. Normal app removal or deleting the diary does not intentionally reset this record; secure-storage availability is controlled by iOS. A different device or complete device erasure may not preserve it.",
+        "Every cold app launch verifies the preview online. The app sends the random identifier, a one-use request nonce and, for migration, the previously recorded preview start time to our Cloudflare service over HTTPS. The service stores a hash of the identifier and an immutable deadline for preview-abuse prevention while the preview programme operates. It does not receive diary entries, notes, photos or Health data through this endpoint. Cloudflare necessarily processes connection information, including IP addresses; a hashed IP is used for short-window rate limiting.",
+        "The random installation identifier, issued deadline and clock facts are also shared with the widget extension in this device’s App Group container. Each free-preview widget timeline or snapshot generation uses that same identifier to request a server deadline; diary content is not sent. After successful app verification, offline time counting is limited to the same running process. A new process cannot reuse a persisted clock anchor as a substitute for online verification. Verification or secure-storage failure does not issue a fresh preview. If today’s date is not trusted, the read-only app withholds the date and corresponding diary record until verification succeeds. Paid purchase-access rules are separate.",
+        "Widget verification failure produces a locked widget, and successful verification schedules expiry according to the returned remaining time. iOS controls refresh and already rendered widget caches; the app cannot promise immediate withdrawal of a cached display. Contact us about service data requests; because the stored identifier is pseudonymous, we may need information sufficient to locate the relevant record without asking you to send diary content."
       ]
     }
   ]
