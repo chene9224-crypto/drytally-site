@@ -1,11 +1,11 @@
 {
   "kind": "privacy",
   "title": "Privacy Policy",
-  "version": "2026-10-23.1",
+  "version": "2026-10-23.2",
   "effectiveDate": "23 October 2026",
   "operator": "Huiru Gao",
   "contactEmail": "erchen735@gmail.com",
-  "summary": "Your diary stays on your device. Purchases, website visits and support have their own data flows.",
+  "summary": "Your diary stays on your device. Purchase verification, website visits and support have separate data flows.",
   "sections": [
     {
       "heading": "1. Who is responsible and what this notice covers",
@@ -46,21 +46,22 @@
       "heading": "6. Purchases, Apple and RevenueCat",
       "paragraphs": [
         "Apple handles payments, account billing and store transaction records. Drytally uses transaction and entitlement information to recognise Pro access and support restoration. We do not receive your payment-card number or Apple Account password.",
-        "The app contains the RevenueCat SDK. It is not initialised when the build’s public configuration key is empty. If RevenueCat is enabled for the distributed build, it processes a generated purchase/customer identifier, product and transaction details, entitlement status, app/device technical details such as platform and version, and network information needed to deliver its service. The app does not set your diary, notes, photos, profile name or health records as RevenueCat customer attributes.",
-        "Purchase processing supports access checks, restoration and fraud prevention. Purchase data may be retained by Apple or RevenueCat under their policies and legal obligations independently of local deletion. If RevenueCat configuration or other purchase data flows materially change, this notice and the store disclosure must be reviewed before distribution."
+        "The current app is configured to use RevenueCat for purchase validation and restoration. It processes a generated anonymous purchase/customer identifier, product and transaction details, entitlement status, app/platform/version information and network information needed to deliver its service. Its subscription dashboard provides purchase analytics. The app does not set your diary, notes, photos, profile name or health records as RevenueCat customer attributes. It does not use an advertising identifier or link this anonymous purchase identity to a diary account.",
+        "Purchase processing supports access checks, restoration and fraud prevention. Purchase data may be retained by Apple or RevenueCat under their policies and legal obligations independently of local deletion. If RevenueCat configuration or other purchase data flows materially change, this notice and the store disclosure must be reviewed before distribution.",
+        "Our Cloudflare-hosted purchase service verifies Apple-signed transaction information and checks the current purchase status with RevenueCat. Authenticated provider events associate a hashed original transaction identifier with the anonymous RevenueCat customer identifier and event time. The service does not accept a client claim of Pro access as proof, and does not receive diary entries, notes or photos. Sandbox and production checks are separated. A test webhook or a local purchase fixture is not a real App Store purchase."
       ]
     },
     {
       "heading": "7. Website visits and support email",
       "paragraphs": [
-        "Cloudflare delivers this website and may process connection data such as IP address, requested URL, browser information, time and security-related events to serve and protect it. We do not add advertising pixels, behavioural analytics, fingerprinting, marketing forms or third-party font requests to the site. We do not set advertising cookies. The hosting provider may use necessary security mechanisms under its published policies.",
+        "Cloudflare delivers this website and hosts the purchase-verification service and may process connection data such as IP address, requested URL, browser information, time and security-related events to serve and protect those requests. We do not add advertising pixels, behavioural analytics, fingerprinting, marketing forms or third-party font requests to the site. We do not set advertising cookies. The hosting provider may use necessary security mechanisms under its published policies.",
         "If you email us, we receive the address, message, attachments and technical details you choose to send. Email providers also process that correspondence. Share only what is needed for the issue; do not send passwords, verification codes, payment-card data or full diary exports unless a specific support need has been explained and you choose to do so."
       ]
     },
     {
       "heading": "8. Why information is processed",
       "paragraphs": [
-        "Local records and settings make the features you request work. Purchase information enables paid access and restoration. Limited web connection data serves and protects the website. Support correspondence lets us answer requests, troubleshoot problems and comply with legal duties.",
+        "Local records and settings make the features you request work. Purchase information enables paid access and restoration. Limited connection data serves and protects the website and purchase service. Support correspondence lets us answer requests, troubleshoot problems and comply with legal duties.",
         "Where EEA or UK data-protection law applies to our processing, the relevant basis may be performing the agreement you request, complying with a legal obligation, or our legitimate interests in secure delivery, preventing fraud and answering enquiries, balanced against your rights. Optional device permissions remain your choice. If a separate consent is legally required for a particular processing activity, it must be requested separately and can be withdrawn; accepting the Terms is not a substitute."
       ]
     },
@@ -82,7 +83,8 @@
       "heading": "11. Retention, deletion and backups",
       "paragraphs": [
         "Local diary data is kept until you change or delete it, reset app data or uninstall the app, subject to iOS behaviour and backups you control. Legal acceptance and settings are local preferences. Existing Health records, original library photos and separately saved exports are not erased just by uninstalling Drytally.",
-        "Support correspondence is retained only as reasonably necessary to answer the issue, maintain a proportionate support record, protect legal rights or meet an applicable legal obligation. Provider transaction records and security logs follow the provider’s applicable retention arrangements; we do not promise an arbitrary deletion deadline for systems we do not control. You can ask about retention for information we hold about you."
+        "Support correspondence is retained only as reasonably necessary to answer the issue, maintain a proportionate support record, protect legal rights or meet an applicable legal obligation. Provider transaction records and security logs follow the provider’s applicable retention arrangements; we do not promise an arbitrary deletion deadline for systems we do not control. You can ask about retention for information we hold about you.",
+        "The purchase service keeps hashed event identifiers for duplicate detection for up to 30 days, with expired entries removed when subsequent events are processed. The anonymous purchase binding is kept while needed to verify and support access to the purchased service; it is not a diary backup. We do not retain the complete signed purchase proof or full provider event payload in the application database. Contact us about access or deletion of service records we hold; deleting local diary data does not itself remove Apple or RevenueCat transaction records."
       ]
     },
     {
@@ -116,7 +118,7 @@
     {
       "heading": "16. Changes, supplier notices and contact",
       "paragraphs": [
-        "This notice is version 2026-10-23.1, effective 23 October 2026. We will update it when actual data practices change and bring material changes to your attention where required. The app and website use the same document version; optional permissions and any separately required consent remain separate from this notice.",
+        "This notice is version 2026-10-23.2, effective 23 October 2026. We will update it when actual data practices change and bring material changes to your attention where required. The app and website use the same document version; optional permissions and any separately required consent remain separate from this notice.",
         "For questions, a privacy request or a complaint, contact Huiru Gao at erchen735@gmail.com. Relevant supplier information is available at apple.com/legal/privacy, revenuecat.com/privacy and cloudflare.com/privacypolicy. Following an external link takes you to that provider’s own service and policies."
       ]
     }

@@ -1,7 +1,7 @@
 {
   "kind": "terms",
   "title": "Terms of Use",
-  "version": "2026-10-23.1",
+  "version": "2026-10-23.2",
   "effectiveDate": "23 October 2026",
   "operator": "Huiru Gao",
   "contactEmail": "erchen735@gmail.com",
@@ -81,7 +81,7 @@
       "heading": "11. Permissions and third-party services",
       "paragraphs": [
         "Health access, photo selection and notifications are optional and governed by your system choices. You can change permissions in iOS settings. Some integrations may stop working if permissions are refused or revoked; essential local diary use does not require all optional permissions.",
-        "Apple provides the App Store, purchase processing and optional system services. RevenueCat may support purchase validation when configured for the distributed build, as explained in the Privacy Policy. Cloudflare hosts this website. Third-party outages or restrictions may affect those services; we do not control their independent policies or platform decisions."
+        "Apple provides the App Store, purchase processing and optional system services. RevenueCat supports purchase validation, and our Cloudflare-hosted purchase service checks signed purchase proofs and receives authenticated purchase events, as explained in the Privacy Policy. Cloudflare also hosts this website. These services do not provide cloud diary sync. Third-party outages or restrictions may affect those services; we do not control their independent policies or platform decisions."
       ]
     },
     {
