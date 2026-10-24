@@ -1,7 +1,7 @@
 {
   "kind": "terms",
   "title": "Terms of Use",
-  "version": "2026-10-24.6",
+  "version": "2026-10-24.7",
   "effectiveDate": "24 October 2026",
   "operator": "Huiru Gao",
   "contactEmail": "erchen735@gmail.com",
@@ -73,7 +73,7 @@
     {
       "heading": "10. Your records, device storage and exports",
       "paragraphs": [
-        "Your diary, notes, selected diary photos, profile and onboarding answers are stored on your device. A widget uses a shared container on the same device. If you explicitly enable optional history sync, supported diary fields and app settings are mirrored through Apple’s private CloudKit database; photo files remain on the device. Sync is off by default, requires valid access and the appropriate Apple account and configured build, and changes take effect after restarting the app. The operator-hosted purchase service does not hold your diary and cannot recover local records or photo files.",
+        "Your diary, notes, selected diary photos, profile and onboarding answers are stored on your device. A widget uses a shared container on the same device. Cross-device diary sync is not included in this release. Existing local records and photo references are retained when updating from an earlier build. Disabling the feature does not delete any cloud copy an earlier build may have created; Apple account controls and policies apply to those copies. The operator-hosted purchase service does not hold your diary and cannot recover local records or photo files.",
         "Protect your device and consider available export and Apple device-backup options. Uninstalling the app or resetting its data may remove local records. An export sent to Files, email or another app is controlled by you and the receiving service. Apple Health copies and separately saved exports may remain after the app is deleted and must be managed in those destinations."
       ]
     },
@@ -81,7 +81,7 @@
       "heading": "11. Permissions and third-party services",
       "paragraphs": [
         "Health access, photo selection and notifications are optional and governed by your system choices. You can change permissions in iOS settings. Some integrations may stop working if permissions are refused or revoked; essential local diary use does not require all optional permissions.",
-        "Apple provides the App Store, purchase processing and optional system services. RevenueCat supports purchase validation, and our Cloudflare-hosted purchase service checks signed purchase proofs and receives authenticated purchase events, as explained in the Privacy Policy. Cloudflare also hosts this website. The operator-hosted services do not provide diary sync. Optional history sync uses Apple CloudKit and requires an Apple account and supported configuration; photos are not synced. Third-party outages or restrictions may affect those services; we do not control their independent policies or platform decisions."
+        "Apple provides the App Store, purchase processing and optional system services. RevenueCat supports purchase validation, and our Cloudflare-hosted purchase service checks signed purchase proofs and receives authenticated purchase events, as explained in the Privacy Policy. Cloudflare also hosts this website. The operator-hosted services do not provide diary sync. Third-party outages or restrictions may affect those services; we do not control their independent policies or platform decisions."
       ]
     },
     {
